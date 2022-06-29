@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    color: rgba(75, 75, 75, 1);
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+body, input {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: rgba(250, 250, 250, 0.9);
+    font-weight: normal;
+    font-size: 2.25rem;
+    padding: 1em;
+}
+
+strong {
+    color: rgba(250, 250, 250, 1);
+    font-size: 3.25rem;
+}
+
+h2,
+strong {
+    font-weight: bold;  
+}
+
+.hero-banner {
+    background-image: url("dark-ribs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(25, 25, 25, 1);
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+
+.login-page {
+    justify-content: center;
+    background-color: rgba(220, 220, 220, 0.8);
+}
+
+.hero-banner,
+.login-page {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner p:nth-child(2) {
+    order: -1;
+    margin-top: 0em;
+    border-top: 8px solid rgba(200, 70, 70, 1);
+}
+
+.hero-banner p:last-child {
+    margin-bottom: 0em;
+    border-bottom: 8px solid rgba(200, 70, 70, 1);
+}
+
+.hero-banner p,
+.login-page p:nth-child(2),
+button {
+    text-transform: uppercase;
+    color: rgba(200, 70, 70, 1);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0em auto;
+    width: 80%;
+}
+
+.login-page p {
+    width: 85%;
+    margin: 1em auto;
+}
+
+h2 {
+    margin-bottom: 0em;
+    font-size: 1.7rem;
+}
+
+.login-page p:nth-child(2) {
+    margin-top: 0em;
+}
+
+input,
+button {
+    margin: 0.5em auto;
+    border-radius: 5px;
+    border: 1px solid rgba(75, 75, 75, 0.5);
+    padding: 0.5em;
+    width: 80%;
+}
+
+input:active,
+input:focus {
+    outline: none;
+    border: 2px solid rgba(200, 70, 70, 1);
+}
+
+input::placeholder{
+    color:rgba(75, 75, 75, 0.5);
+}
+
+button {
+    background: linear-gradient(to right, rgba(220, 150, 150, 1), rgba(200, 70, 70, 1));
+    color:rgba(250, 250, 250, 1);
+    font-size: 0.8rem;;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.fine-print{
+    font-size: 0.7rem;
+}
+
+@media (min-width: 750px) {
+    body {
+        display:flex;
+    }
+
+    .hero-banner,
+    .login-page {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+
+}
