@@ -46,7 +46,7 @@ strong {
 
 .hero-banner,
 .login-page {
-    height: 50vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
 }
